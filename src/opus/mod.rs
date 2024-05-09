@@ -44,7 +44,7 @@ pub struct JsOpusEncoder {
   channels: i32,
 }
 
-#[napi(js_name = "OpusEncoder")]
+#[napi()]
 impl JsOpusEncoder {
   #[napi(constructor)]
   pub fn new(sample_rate: i32, channels: i32) -> Result<Self> {
